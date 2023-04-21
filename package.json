@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc",
+    "buil:dev": "tsc -w"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
