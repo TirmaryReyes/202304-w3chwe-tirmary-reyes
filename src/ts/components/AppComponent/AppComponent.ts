@@ -2,7 +2,7 @@ import Component from "../Component/Component.js";
 
 class AppComponent extends Component {
   constructor(parentElement: HTMLElement) {
-    super(parentElement, "div", "container");
+    super(parentElement, "container", "div");
 
     this.renderHtml();
   }
