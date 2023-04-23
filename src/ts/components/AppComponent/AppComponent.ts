@@ -10,7 +10,7 @@ class AppComponent extends Component {
 
   renderHtml() {
     this.domElement.innerHTML = `<header class="main-header">
-    <img src="./img/pokemon-logo.svg" alt="pokemon logo">
+    <img class= "main-header__logo" src="./img/pokemon-logo.svg" alt="pokemon logo">
     </header>
     <main class="main"> </main>`;
 

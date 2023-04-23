@@ -20,13 +20,15 @@ class PokemonCardComponent extends Component {
   renderHtml(): void {
     this.domElement.innerHTML = `
     <div class= "card-pokemon">
-    <img src="${this.pokemonData.sprites.other["official-artwork"].front_default}"
+    <img class "card-pokemon__img" src="${this.pokemonData.sprites.other["official-artwork"].front_default}"
     class= "card-img-top" alt= "Picture art of ${this.pokemonData.name}"/>
      <h2 class="pokemon__name" >${this.pokemonData.name}</h2>
     <ul class="pokemon__data">
+    <li class="card-pokemon__data-item">
    <span class ="pokemon__data-label"> Type:</span>
     ${this.pokemonData.types[0].type.name}
-
+    </li>
+    </ul>
     </div>`;
   }
 }
