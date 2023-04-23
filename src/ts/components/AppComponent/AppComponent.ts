@@ -1,7 +1,8 @@
 import Component from "../Component/Component.js";
+import PokemonListComponent from "../PokemonListComponent/PokemonListComponent.js";
 
 class AppComponent extends Component {
-  constructor(parentElement: HTMLElement) {
+  constructor(parentElement: Element) {
     super(parentElement, "container", "div");
 
     this.renderHtml();
@@ -10,7 +11,11 @@ class AppComponent extends Component {
   renderHtml() {
     this.domElement.innerHTML = `<header class="main-header">
     <img src="./img/pokemon-logo.svg" alt="pokemon logo">
-    </header>`;
+    </header>
+    <main class="main"> </main>`;
+
+    const mainContainer = this.domElement.querySelector(".main")!;
+    new PokemonListComponent(mainContainer);
   }
 }
 
