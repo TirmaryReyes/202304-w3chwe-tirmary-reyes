@@ -11,5 +11,8 @@
     "strictNullChecks": true /* When type checking, take into account 'null' and 'undefined'. */,
     "sourceMap": true
   },
-  "include": ["src/ts/**/*.ts"]
+  "include": [
+    "src/ts/**/*.ts",
+    "src/ts/components/AppComponent/AppComponent.test.j"
+  ]
 }
